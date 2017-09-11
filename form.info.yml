@@ -1,0 +1,6 @@
+name: Form
+description: Creates a page for contact form".
+package: Custom
+type: module
+version: 1.0
+core: 8.x

@@ -1,0 +1,7 @@
+form.content:
+  path: '/form'
+  defaults:
+    _controller: 'ContactForm\src\Form\FormSettings::content'
+    _title: 'Form contact'
+  requirements:
+    _permission: 'access content'

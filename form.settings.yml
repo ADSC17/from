@@ -2,4 +2,4 @@ form.settings:
   title: 'Form settings'
   description: 'admin settings for form_contact'
   parent: system.admin_config_development
-  route_name: form.content
+  route_name: form

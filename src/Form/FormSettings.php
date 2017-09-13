@@ -1,9 +1,9 @@
 <?php
 
-namespace ContactForm\src\Form;
+namespace \ContactForm\src\Form;
 
-use Drupal\core\Form\FormBase;
-use Drupal\core\Form\FormStateInteface;
+use \Drupal\core\Form\FormBase;
+use \Drupal\core\Form\FormStateInteface;
 
 Class FormSettings extends FormBase {
 	
@@ -11,7 +11,7 @@ Class FormSettings extends FormBase {
 		return 'form_contact';
 	}
 	
-	public function buildForm(array $form, FormStateInteface $form_state) {
+		public function buildForm(array $form, FormStateInteface $form_state) {
 		
 			$form['fullname'] = array(
 			'#type' => 'textfield',
@@ -54,6 +54,6 @@ Class FormSettings extends FormBase {
 		
 		public function submitForm(array $form, FormStateInteface $form_state) {
 			drupal_set_message($this->t('Thank you for your messsage @fullname', array('@fullname' => $form_state->getValue('fullname'))));
-			}
-}	
+		}
+};	
 ?>
